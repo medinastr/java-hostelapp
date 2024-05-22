@@ -1,5 +1,8 @@
 package com.hostelapp;
 
+import com.hostelapp.model.payment.Payment;
+import com.hostelapp.model.payment.type.*;
+
 public class PaymentTest {
     public static void main(String[] args) {
         PaymentTest pt = new PaymentTest();

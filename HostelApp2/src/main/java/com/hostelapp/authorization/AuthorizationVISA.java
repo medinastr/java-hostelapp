@@ -1,4 +1,4 @@
-package com.hostelapp;
+package com.hostelapp.authorization;
 
 public abstract class AuthorizationVISA implements Authorization {
     @Override

@@ -1,4 +1,4 @@
-package com.hostelapp;
+package com.hostelapp.model.payment.type;
 
 public abstract class PaymentType {
     private String type;

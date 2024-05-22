@@ -1,4 +1,8 @@
-package com.hostelapp;
+package com.hostelapp.report;
+
+import com.hostelapp.model.payment.Payment;
+import com.hostelapp.model.payment.type.CreditCardPayment;
+import com.hostelapp.model.payment.type.DebitCardPayment;
 
 public class Report {
     private Payment[] payments;

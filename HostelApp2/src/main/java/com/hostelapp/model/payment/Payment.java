@@ -1,4 +1,6 @@
-package com.hostelapp;
+package com.hostelapp.model.payment;
+
+import com.hostelapp.model.payment.type.PaymentType;
 
 import java.time.LocalDateTime;
 
