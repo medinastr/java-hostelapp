@@ -30,9 +30,9 @@ public class CardPayment extends PaymentType {
     }
 
     public String getDetails() {
-        String temp = "Number: " + this.getCardNumber() +
-                "\nName on card: " + this.getNameOnCard() + "\n" +
-                super.getDetails();
+        String temp = super.getDetails() + "\n" +
+                "Number: " + this.getCardNumber() +
+                "\nName on card: " + this.getNameOnCard();
         return temp;
     }
 }

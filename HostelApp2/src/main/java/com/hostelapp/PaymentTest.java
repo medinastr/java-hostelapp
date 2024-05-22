@@ -36,7 +36,8 @@ public class PaymentTest {
     }
 
     public void processPayment2(Payment p) {
-        System.out.println("Processing payment");
-        System.out.println(p.getDetails()); // getDetails() acessado pela subclasse, logo não precisa de casting.
+        p.process();
+//        System.out.println("Processing payment");
+//        System.out.println(p.getDetails());
     }
 }

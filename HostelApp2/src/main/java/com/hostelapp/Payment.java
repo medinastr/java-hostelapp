@@ -1,7 +1,5 @@
 package com.hostelapp;
 
-import jdk.vm.ci.meta.Local;
-
 import java.time.LocalDateTime;
 
 public class Payment extends Expense implements Processable {
@@ -29,11 +27,12 @@ public class Payment extends Expense implements Processable {
     @Override
     public void process() {
         System.out.println("Processing payment");
-        System.out.println(t);
+        System.out.println(super.getDetails());
+        System.out.println(t.getDetails());
     }
 
     public String getDetails() {
-        String temp = t + "$" + "\n" +
+        String temp = super.getDetails() + "\n" +
                 t.getDetails();
         return temp;
     }

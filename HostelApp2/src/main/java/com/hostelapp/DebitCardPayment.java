@@ -17,7 +17,7 @@ public class DebitCardPayment extends CardPayment {
     }
 
     public String getDetails() {
-        String temp = "Payment details (Debit card):\n" +
+        String temp = "Payment details\n" +
                 super.getDetails() +
                 "\nBank name: " + this.bankName + "\n";
         return temp;

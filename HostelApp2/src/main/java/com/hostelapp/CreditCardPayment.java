@@ -34,7 +34,7 @@ public class CreditCardPayment extends CardPayment {
     }
 
     public String getDetails() {
-        String temp = "Payment details (Credit card):\n" +
+        String temp = "Payment details\n" +
                 super.getDetails() +
                 "\nIssuer: " + this.issuer + "\n";
         return temp;
