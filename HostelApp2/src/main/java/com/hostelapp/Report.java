@@ -16,9 +16,12 @@ public class Report {
 
     @Override
     public String toString() {
+        int counter = 0;
         String temp = "";
-        for(Payment x : payments) {
-            temp += x.getDetails() + "\n";
+        for(Payment p : payments) {
+            counter++;
+            temp += "Payment " + counter + "\n"
+                    + p.getDetails() + "\n";
         }
         return temp;
     }
