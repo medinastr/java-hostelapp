@@ -5,7 +5,7 @@ public class CheckPayment extends PaymentType {
     private int branchId;
     private String bankName;
 
-    public CheckPayment(double amount, String bankId, int branchId, String bankName) {
+    public CheckPayment(String bankId, int branchId, String bankName) {
         super("Check payment");
         this.bankId = bankId;
         this.bankName = bankName;

@@ -18,12 +18,12 @@ public class PaymentTest {
 
         CreditCardPayment ccp2 = new CreditCardPayment("Pedro Medina", "0000-1111-2222-3333", "Visa");
         CashPayment cash = new CashPayment(200);
-        CheckPayment check = new CheckPayment(200, "B02", 10, "Banco do Brasil");
+        CheckPayment check = new CheckPayment("B02", 10, "Banco do Brasil");
 
 
     }
 
-    // mostra o método específico de cada subclasse (issuer e bankName)
+    // mostra o método para mostrar o específico de cada subclasse (issuer e bankName)
     public void processPayment1(CardPayment cp) {
         System.out.println("Processing payment");
         if(cp instanceof CreditCardPayment) {

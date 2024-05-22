@@ -1,7 +1,11 @@
 package com.hostelapp;
 
+import java.time.LocalDate;
+
 public class CreditCardPayment extends CardPayment {
     private String issuer;
+    private LocalDate expirationDate;
+    private String securityCode;
 
     public CreditCardPayment(String issuer, String cardNumber, String nameOnCard) {
         super("Credit Card Payment", cardNumber, nameOnCard);

@@ -1,9 +1,12 @@
 package com.hostelapp;
 
+import jdk.vm.ci.meta.Local;
+
 import java.time.LocalDateTime;
 
 public class Payment extends Expense {
     private PaymentType t;
+    private LocalDateTime localDateTime;
 
     public Payment(double amount) {
         super(amount);
@@ -17,8 +20,10 @@ public class Payment extends Expense {
         this.t = t;
     }
 
+    @Override
     public LocalDateTime getTime() {
-        return LocalDateTime.now();
+        this.localDateTime = LocalDateTime.now();
+        return localDateTime;
     }
 
     public String getDetails() {
