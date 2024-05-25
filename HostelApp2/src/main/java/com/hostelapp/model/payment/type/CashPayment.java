@@ -18,7 +18,7 @@ public class CashPayment extends PaymentType {
 
     public String getDetails() {
         String temp = "Total amount: " + this.getType() +
-                "\nAmount tendered:" + this.amountTendered +
+                "\nAmount tendered:" + this.amountTendered +  "\n" +
                 super.getDetails();
         return temp;
     }

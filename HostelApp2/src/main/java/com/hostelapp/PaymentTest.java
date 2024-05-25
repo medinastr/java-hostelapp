@@ -36,16 +36,14 @@ public class PaymentTest {
         paymentDC.authorize();
         pt.processPayment2(paymentDC);
 
-        CreditCardPayment ccp2 = new CreditCardPayment("Pedro Medina", "0000-1111-2222-3333", "Visa");
-        CashPayment cash = new CashPayment(200);
-        CheckPayment check = new CheckPayment("B02", 10, "Banco do Brasil");
-
+        Payment c = new Payment(25.00);
+        PaymentType cash = new CashPayment(200);
+        c.setT(cash);
+        pt.processPayment2(c);
 
     }
 
     public void processPayment2(Payment p) {
         p.process();
-//        System.out.println("Processing payment");
-//        System.out.println(p.getDetails());
     }
 }
